@@ -5,7 +5,7 @@
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yTiTQ6g-lM7RISeK774DuM8jesuiOVS_)
 
 
-Bert as a Library is a framework for prediction, evaluation and finetuning of Bert models.
+Bert as a Library is a framework for prediction, evaluation and finetuning of Bert models. It's also suitable for production, allowing an easy deploy using Flask or similar services.
 
 ## Installation
 You can install the library from `pip` using following command
