@@ -17,6 +17,7 @@ $ pip install BertLibrary
 The setup of BertLibrary is dead simple. You have 2 options:
 - `import BertFTModel` to finetune your model and run evaluations/predictions.
 - `import BertFEModel` if you want to extract features from a pretrained/finetuned Bert (only prediction/evaluation).
+- Download a pretrained model from [here](https://github.com/google-research/bert)
 
 ### Finetuning Model
 ```python
