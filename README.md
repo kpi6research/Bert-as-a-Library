@@ -64,7 +64,7 @@ from BertLibary import BertFEModel
 # Instantiate the model
 fe_model = BertFEModel( model_dir='uncased_L-12_H-768_A-12',
                         ckpt_name="bert_model.ckpt",
-                        labels=['0','1'],
+                        layer=-2,
                         do_lower_case=False,
                         max_seq_len=50,
                         batch_size=32,
