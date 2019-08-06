@@ -1,4 +1,4 @@
-import modeling
+import BertLibrary.bert.modeling
 import sys
 import os
 import tensorflow as tf
@@ -6,7 +6,7 @@ import tensorflow as tf
 from tensorflow.estimator import EstimatorSpec
 
 
-from run_classifier import *
+from BertLibrary.bert.run_classifier import *
 from .BertModel import BertModel
 from BertLibrary.processors.FTProcessor import FTProcessor
 

@@ -1,5 +1,5 @@
-from run_classifier import *
-import tokenization
+from BertLibrary.bert.run_classifier import *
+import BertLibrary.bert.tokenization
 
 import os
 
