@@ -17,17 +17,17 @@ if get_dist('tensorflow') is None and get_dist('tensorflow_gpu') is None:
 setup(
   name = 'BertLibrary',   
   packages = find_packages(),
-  version = '0.0.1',     
+  version = '0.4',     
   license='MIT',        
-  description = 'BaaL is a Tensorflow library for quick and easy training and finetuning of models based on Bert',   # Give a short description about your library
+  description = 'BaaL is a Tensorflow library for quick and easy training and finetuning of models based on Bert', 
   author = 'KPI6 Research',                   
   author_email = 'info@kpi6.com',    
   url = 'https://github.com/kpi6research/Bert-as-a-Library',   
-  download_url = 'https://github.com/kpi6research/Bert-as-a-Library/archive/0.0.1.tar.gz',   
+  download_url = 'https://github.com/kpi6research/Bert-as-a-Library/archive/0.4.tar.gz',   
   keywords = ['Bert', 'fientuning', 'nlp'],  
   install_requires=install_deps,
   classifiers=[
-    'Development Status :: 0.0.1 - Beta',      
+    'Development Status :: 0.4 - Beta',      
     'Intended Audience :: Developers',      
     'Topic :: Software Development :: Build Tools',
     'License :: OSI Approved :: MIT License',   
