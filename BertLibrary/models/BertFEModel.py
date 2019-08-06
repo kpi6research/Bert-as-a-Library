@@ -1,5 +1,5 @@
 from BertLibrary.bert.run_classifier import *
-import BertLibrary.bert.modeling
+import BertLibrary.bert.modeling as modeling
 
 from .BertModel import BertModel
 from BertLibrary.processors.FEProcessor import FEProcessor

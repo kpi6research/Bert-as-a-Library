@@ -8,8 +8,8 @@ from tensorflow.estimator import Estimator
 from tensorflow.estimator import RunConfig
 
 from BertLibrary.bert.run_classifier import *
-import BertLibrary.bert.modeling
-import BertLibrary.bert.tokenization
+import BertLibrary.bert.modeling as modeling
+import BertLibrary.bert.tokenization as tokenization
 
 
 class BertModel:
