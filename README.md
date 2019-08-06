@@ -1,16 +1,11 @@
 # Bert as a Library (BaaL)
-
-<p align="center">
-  
-  
   
 ![GitHub](https://img.shields.io/github/license/kpi6research/Bert-as-a-Library)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/BertLibrary)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yTiTQ6g-lM7RISeK774DuM8jesuiOVS_)
 
 
-</p>
-
-Bert as a Library is a framework for prediction, evaluation and finetuning of Bert models.
+Bert as a Library is a framework for prediction, evaluation and finetuning of Bert models. It's also suitable for production, allowing an easy deploy using Flask or similar services.
 
 ## Installation
 You can install the library from `pip` using following command
@@ -22,6 +17,7 @@ $ pip install BertLibrary
 The setup of BertLibrary is dead simple. You have 2 options:
 - `import BertFTModel` to finetune your model and run evaluations/predictions.
 - `import BertFEModel` if you want to extract features from a pretrained/finetuned Bert (only prediction/evaluation).
+- Download a pretrained model from [here](https://github.com/google-research/bert)
 
 ### Finetuning Model
 ```python
