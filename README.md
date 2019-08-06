@@ -89,7 +89,7 @@ BertFEModel constructor parameters:
 ## Finetuning and Evaluation
 And then to run the training you have 2 options, run from file and run from memory
 
-If you want to run from file you must first create 3 separate files (first two for training, last one for evaluation) which are train|dev|test.tsv. All those files must respect the tsv format having as first column the string label and the second column the text
+If you want to run from file you must first create 3 separate files (first two for training, last one for evaluation) which are `train|dev|test.tsv`. All those files must respect the tsv format having as first column the string label and the second column the text
 with no header
 
 example:
