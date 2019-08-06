@@ -15,23 +15,23 @@ if get_dist('tensorflow') is None and get_dist('tensorflow_gpu') is None:
     install_deps.append('tensorflow')
 
 setup(
-  name = 'BertLibrary',         # How you named your package folder (MyLib)
-  packages = find_packages(),   # Chose the same as "name"
-  version = '0.3',      # Start with a small number and increase it with every change you make
-  license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
+  name = 'BertLibrary',   
+  packages = find_packages(),
+  version = '0.0.1',     
+  license='MIT',        
   description = 'BaaL is a Tensorflow library for quick and easy training and finetuning of models based on Bert',   # Give a short description about your library
-  author = 'Andrea Salvoni',                   # Type in your name
-  author_email = 'andrea.salvoni93@gmail.com',      # Type in your E-Mail
-  url = 'https://github.com/kpi6research/Bert-as-a-Library',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/kpi6research/Bert-as-a-Library/archive/v_03.tar.gz',    # I explain this later on
-  keywords = ['Bert', 'fientuning', 'nlp'],   # Keywords that define your package best
+  author = 'KPI6 Research',                   
+  author_email = 'info@kpi6.com',    
+  url = 'https://github.com/kpi6research/Bert-as-a-Library',   
+  download_url = 'https://github.com/kpi6research/Bert-as-a-Library/archive/0.0.1.tar.gz',   
+  keywords = ['Bert', 'fientuning', 'nlp'],  
   install_requires=install_deps,
   classifiers=[
-    'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
-    'Intended Audience :: Developers',      # Define that your audience are developers
+    'Development Status :: 0.0.1 - Beta',      
+    'Intended Audience :: Developers',      
     'Topic :: Software Development :: Build Tools',
-    'License :: OSI Approved :: MIT License',   # Again, pick a license
-    'Programming Language :: Python :: 3',      #Specify which pyhton versions that you want to support
+    'License :: OSI Approved :: MIT License',   
+    'Programming Language :: Python :: 3',      
     'Programming Language :: Python :: 3.4',
     'Programming Language :: Python :: 3.5',
     'Programming Language :: Python :: 3.6',
