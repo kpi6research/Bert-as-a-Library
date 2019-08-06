@@ -2,7 +2,7 @@ from .processors.Label2TextProcessor import Label2TextProcessor
 import os
 
 import tensorflow as tf
-from run_classifier import *
+from BertLibrary.bert.run_classifier import *
 
 
 class BertTrainer():
