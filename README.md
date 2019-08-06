@@ -3,7 +3,7 @@ Bert as a Library is a framework for prediction, evaluation and finetuning of Be
 
 ## Installation
 You can install the library from `pip` using following command
-```sh
+```bash
 $ pip install BertLibrary
 ```
 
@@ -13,7 +13,7 @@ The setup of BertLibrary is dead simple. You have 2 options:
 - `import BertFEModel` if you want to extract features from a pretrained/finetuned Bert (only prediction/evaluation).
 
 ### Finetuning Model
-```
+```python
 # Import model for fintuning
 from BertLibary import BertFTModel
 
@@ -57,7 +57,7 @@ BertFTModel constructor parameters:
 
 
 ### Feature Extraction Model
-```
+```python
 # Import model for doing feature extraction
 from BertLibary import BertFEModel
 
@@ -100,30 +100,30 @@ Example:
 | negative | I hate cucumbers |
 
 For example if you have a folder `./dataset` with `train.tsv` and `dev.tsv`, you can run the finetuning like this:
-```
+```python
 path_to_file = './datasets'
 ft_trainer.train_from_file(path_to_file, 60000)
 ```
 
 Instead if you want to run the finetuning from memory, you can pass just the data like in the following example where `X` and `X_val` are a list of sentences, and `y` contains the string labels
-```
+```python
 X, y, X_val, y_val = get_train_test_data()
 ft_trainer.train(X, y, X_val=X_val, y_val=y_val, 60000)
 ```
 
 To run evaluation you can run this command if you are working with files
-```
+```python
 ft_evaluator.evaluate_from_file(path_to_file, checkpoint="output/model.ckpt-35000") 
 ```
 
 Or you can run it like this on memory
-```
+```python
 ft_evaluator.evaluate(X_test, y_test, checkpoint="output/model.ckpt-35000") 
 ```
 
 ## Prediction
 To run predictions you must instantiate the model first, and then you get the predictor using get_predictor funciton from the model object
-```
+```python
 # Get the predictor from the desired model
 predictor =  model.get_predictor()
 
