@@ -71,7 +71,7 @@ fe_model = BertFEModel( model_dir='uncased_L-12_H-768_A-12',
                         )
 
 
-ft_predictor =  fe_model.get_predictor()
+fe_predictor =  fe_model.get_predictor()
 ```
 
 BertFEModel constructor parameters:
