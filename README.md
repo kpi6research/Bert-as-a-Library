@@ -1,4 +1,6 @@
 # Bert as a Library (BaaL)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yTiTQ6g-lM7RISeK774DuM8jesuiOVS_)
+
 Bert as a Library is a framework for prediction, evaluation and finetuning of Bert models.
 
 ## Installation
