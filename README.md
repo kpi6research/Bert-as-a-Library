@@ -1,14 +1,9 @@
 # Bert as a Library (BaaL)
-
-<p align="center">
-  
-  
   
 ![GitHub](https://img.shields.io/github/license/kpi6research/Bert-as-a-Library)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/BertLibrary)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1yTiTQ6g-lM7RISeK774DuM8jesuiOVS_)
 
-
-</p>
 
 Bert as a Library is a framework for prediction, evaluation and finetuning of Bert models.
 
