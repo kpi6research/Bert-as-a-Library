@@ -8,7 +8,7 @@ from tensorflow.estimator import EstimatorSpec
 
 from run_classifier import *
 from .BertModel import BertModel
-from BertLib.processors.FTProcessor import FTProcessor
+from BertLibrary.processors.FTProcessor import FTProcessor
 
 
 class BertFTModel(BertModel):

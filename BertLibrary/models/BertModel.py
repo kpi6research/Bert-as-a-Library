@@ -1,8 +1,8 @@
 import os
 import tensorflow as tf
-from BertLib.bert_predictor import BertPredictor
-from BertLib.bert_trainer import BertTrainer
-from BertLib.bert_evaluator import BertEvaluator
+from BertLibrary.bert_predictor import BertPredictor
+from BertLibrary.bert_trainer import BertTrainer
+from BertLibrary.bert_evaluator import BertEvaluator
 
 from tensorflow.estimator import Estimator
 from tensorflow.estimator import RunConfig

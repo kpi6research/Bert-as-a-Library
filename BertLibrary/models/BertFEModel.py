@@ -2,7 +2,7 @@ from run_classifier import *
 import modeling
 
 from .BertModel import BertModel
-from BertLib.processors.FEProcessor import FEProcessor
+from BertLibrary.processors.FEProcessor import FEProcessor
 
 from tensorflow.estimator import EstimatorSpec
 

@@ -15,15 +15,15 @@ if get_dist('tensorflow') is None and get_dist('tensorflow_gpu') is None:
     install_deps.append('tensorflow')
 
 setup(
-  name = 'BertLib',         # How you named your package folder (MyLib)
-  packages = ['BertLib'],   # Chose the same as "name"
-  version = '0.2',      # Start with a small number and increase it with every change you make
+  name = 'BertLibrary',         # How you named your package folder (MyLib)
+  packages = ['BertLibrary'],   # Chose the same as "name"
+  version = '0.1',      # Start with a small number and increase it with every change you make
   license='MIT',        # Chose a license from here: https://help.github.com/articles/licensing-a-repository
   description = 'BaaL is a Tensorflow library for quick and easy training and finetuning of models based on Bert',   # Give a short description about your library
   author = 'Andrea Salvoni',                   # Type in your name
   author_email = 'andrea.salvoni93@gmail.com',      # Type in your E-Mail
   url = 'https://github.com/kpi6research/Bert-as-a-Library',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/kpi6research/Bert-as-a-Library/archive/v_02.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/kpi6research/Bert-as-a-Library/archive/v_01.tar.gz',    # I explain this later on
   keywords = ['Bert', 'fientuning', 'nlp'],   # Keywords that define your package best
   install_requires=install_deps,
   classifiers=[
