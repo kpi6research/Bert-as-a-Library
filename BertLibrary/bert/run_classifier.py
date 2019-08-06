@@ -21,9 +21,9 @@ from __future__ import print_function
 import collections
 import csv
 import os
-import BertLibrary.bert.modeling
-import BertLibrary.bert.optimization
-import BertLibrary.bert.tokenization
+import BertLibrary.bert.modeling as modeling
+import BertLibrary.bert.optimization as optimization
+import BertLibrary.bert.tokenization as tokenization
 import tensorflow as tf
 
 flags = tf.flags
