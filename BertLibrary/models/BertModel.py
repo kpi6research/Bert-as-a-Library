@@ -22,6 +22,7 @@ class BertModel:
                  batch_size,
                  labels,
                  trainable=True,
+                 keep_checkpoint_max=5,
                  config=None):
         self.model_dir = model_dir
         self.bert_config, self.vocab_file, \
@@ -31,6 +32,7 @@ class BertModel:
         self.max_seq_len = max_seq_len
         self.batch_size = batch_size
         self.processer = None
+        self.keep_checkpoint_max = keep_checkpoint_max
         self.labels = labels
         self.config = config if config else None
         self.predictor = None
@@ -68,6 +70,7 @@ class BertModel:
         run_config = RunConfig(
             model_dir=ckpt_output_dir,
             session_config=self.config,
+            keep_checkpoint_max=self.keep_checkpoint_max,
             save_checkpoints_steps=save_check_steps)
 
         return run_config

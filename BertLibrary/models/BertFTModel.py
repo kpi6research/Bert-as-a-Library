@@ -24,6 +24,7 @@ class BertFTModel(BertModel):
                  do_lower_case,
                  max_seq_len,
                  batch_size,
+                 keep_checkpoint_max=5,
                  lr=3e-05,
                  config=None):
         super().__init__(
@@ -33,6 +34,7 @@ class BertFTModel(BertModel):
             max_seq_len=max_seq_len,
             batch_size=batch_size,
             labels=labels,
+            keep_checkpoint_max=keep_checkpoint_max,
             config=config)
 
         model_fn_args = {'bert_config': self.bert_config,
