@@ -19,7 +19,7 @@ class BertEvaluator:
                                                 self.model.tokenizer,
                                                 output_file)
 
-    def evaluate(self, X, y, checkpoint):
+    def evaluate(self, X, y, checkpoint=None):
         test_examples = self.processor.get_examples(X, y)
 
         test_features = convert_examples_to_features(test_examples,
@@ -30,7 +30,7 @@ class BertEvaluator:
         test_input_fn = input_fn_builder(
             features=test_features,
             seq_length=self.model.max_seq_len,
-            is_training=True,
+            is_training=False,
             drop_remainder=False)
 
         self.model.estimator.evaluate(
@@ -49,7 +49,7 @@ class BertEvaluator:
         eval_input_fn = file_based_input_fn_builder(
             input_file=processed_test_file,
             seq_length=self.model.max_seq_len,
-            is_training=True,
+            is_training=False,
             drop_remainder=True)
 
         self.model.estimator.evaluate(
