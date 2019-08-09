@@ -50,9 +50,6 @@ class BertModel:
         self.tokenizer = tokenization.FullTokenizer(
             vocab_file=self.vocab_file, do_lower_case=self.do_lower_case)
 
-    def get_model_fn(self, *args):
-        return NotImplementedError()
-
     def get_model_configs(self, base_dir, ckpt_name):
         bert_config_file = os.path.join(base_dir, 'bert_config.json')
         vocab_file = os.path.join(base_dir, 'vocab.txt')
@@ -82,5 +79,8 @@ class BertModel:
         assert self.trainable, 'This model cannot be trained'
         return BertTrainer(self)
 
-    def get_evaluator(self):
-        return BertEvaluator(self)
+    def get_evaluator(self, iter_steps=1000):
+        return BertEvaluator(self, iter_steps=iter_steps)
+
+    def get_model_fn(self, *args):
+        return NotImplementedError()
