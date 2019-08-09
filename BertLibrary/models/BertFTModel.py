@@ -117,9 +117,7 @@ class BertFTModel(BertModel):
                 output_spec = EstimatorSpec(
                     mode=mode,
                     loss=total_loss,
-                    eval_metric_ops={
-                        "eval_accuracy": accuracy,
-                    })
+                    eval_metric_ops={"eval_accuracy": accuracy})
             else:
                 output_spec = EstimatorSpec(
                     mode=mode,
