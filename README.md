@@ -3,6 +3,12 @@
 ![GitHub](https://img.shields.io/github/license/kpi6research/Bert-as-a-Library)
 ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/BertLibrary)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/kpi6research/Bert-as-a-Library/blob/master/examples/Finetune_Bert_Sentiment140_with_BertLibrary.ipynb)
+<a href="https://nbviewer.jupyter.org/github/kpi6research/Bert-as-a-Library/blob/master/examples/Finetune_Bert_Sentiment140_with_BertLibrary.ipynb" 
+   target="_new">
+   <img  
+      src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg?sanitize=true" 
+      width="109" height="20">
+</a>
 
 
 Bert as a Library is a framework for prediction, evaluation and finetuning of Bert models. It's also suitable for production, allowing an easy deploy using Flask or similar services.
