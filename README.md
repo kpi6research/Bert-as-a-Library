@@ -72,7 +72,7 @@ BertFTModel constructor parameters:
 ### Feature Extraction Model
 ```python
 # Import model for doing feature extraction
-from BertLibary import BertFEModel
+from BertLibrary import BertFEModel
 
 # Instantiate the model
 fe_model = BertFEModel( model_dir='uncased_L-12_H-768_A-12',
